@@ -10,6 +10,10 @@ section .main {
 header {
   border-bottom: solid 1px var(--border-color);
 }
+header .material-symbols-outlined {
+  font-size: 1.5rem;
+  line-height: 1;
+}
 header .container {
   width: 100%;
   max-width: 90vw;
@@ -27,6 +31,16 @@ header .container .header-inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+header .container .header-inner button {
+  background-color: transparent;
+  padding: 0.5rem;
+  border: none;
+  cursor: pointer;
+  color: var(--text-color);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 header .container .header-inner .header-brand {
   display: flex;

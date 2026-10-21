@@ -1,6 +1,9 @@
 header {
   border-bottom: solid 1px var(--border-color);
-
+  .material-symbols-outlined {
+    font-size: 1.5rem;
+    line-height: 1;
+  }
   .container {
     width: 100%;
     max-width: 90vw;
@@ -18,7 +21,17 @@ header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-
+    
+       button {
+        background-color: transparent;
+        padding: 0.5rem;
+        border: none;
+        cursor: pointer;
+        color: var(--text-color);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+      }
       
       .header-brand {
         display: flex;
