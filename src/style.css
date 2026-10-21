@@ -28,6 +28,30 @@ header .container .header-inner {
   justify-content: space-between;
   align-items: center;
 }
+header .container .header-inner nav {
+  display: flex;
+  gap: 1.5rem;
+}
+header .container .header-inner nav a {
+  color: #4b5563;
+  text-decoration: inherit;
+}
+header .container .header-inner nav a:hover {
+  color: #137fec;
+}
+header .container .header-inner .header-brand,
+header .container .header-inner .header-actions {
+  display: flex;
+  align-items: center;
+}
+header .container .header-inner .header-brand.header-brand,
+header .container .header-inner .header-actions.header-brand {
+  gap: 2rem;
+}
+header .container .header-inner .header-brand.header-actions,
+header .container .header-inner .header-actions.header-actions {
+  gap: 0.5rem;
+}
 header .container .header-inner .site-title {
   margin: 0;
   font-size: 1.25rem;

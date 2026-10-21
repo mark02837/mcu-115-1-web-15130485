@@ -19,7 +19,32 @@ header {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      nav {
+        display: flex;
+        gap: 1.5rem;
 
+        a {
+          color: #4b5563;
+          text-decoration: inherit;
+
+          &:hover {
+            color: #137fec;
+          }
+        }
+      }
+    .header-brand,
+      .header-actions {
+        display: flex;
+        align-items: center;
+
+        &.header-brand {
+          gap: 2rem;
+        }
+
+        &.header-actions {
+          gap: 0.5rem;
+        }
+      }
       .site-title {
         margin: 0;
         font-size: 1.25rem;
