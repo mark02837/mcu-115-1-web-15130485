@@ -1,0 +1,20 @@
+{
+  "jdk.telemetry.enabled": true,
+  "jdk.jdkhome": "c:\\Users\\mark9\\Downloads\\Java練習\\oracleJdk-27",
+  "liveSassCompile.settings.excludeList": [
+    "/src/assets/code/**"
+  ],
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "/src"
+    },
+    {
+      "format": "compressed",
+      "extensionName": ".min.css",
+      "savePath": "/src"
+    }
+  ],
+  "liveServer.settings.donotShowInfoMsg": true
+}
