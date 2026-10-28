@@ -9,7 +9,7 @@ footer {
     padding-left: 2rem;
     padding-right: 2rem;
   }
-  > div {
+  .footer-inner {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -18,7 +18,7 @@ footer {
     padding-block: 1rem;
   }
 
-  nav {
+  .footer-nav {
     display: flex;
     flex-wrap: wrap;
     gap: 0.75rem 1.5rem;
