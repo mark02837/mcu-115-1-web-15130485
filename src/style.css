@@ -137,11 +137,44 @@ header .container .header-inner .header-actions > button {
   width: 20%;
   flex-shrink: 0;
 }
+.category-sidebar h2 {
+  margin: 0;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  color: var(--header-color);
+}
 
 .book-main {
   flex: 1 1 0%;
   min-width: 0;
   overflow-wrap: anywhere;
+}
+
+.category-nav {
+  margin-block: 1.5rem;
+}
+.category-nav a:hover {
+  background-color: var(--gray-color-100);
+  color: var(--primary-color);
+}
+.category-nav a.active {
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: 700;
+}
+.category-nav a {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  overflow-wrap: anywhere;
+}
+.category-nav .material-symbols-outlined {
+  flex-shrink: 0;
+  font-size: 1.5rem;
+  line-height: 1;
 }
 
 footer {
@@ -182,6 +215,7 @@ footer p {
 }
 
 :root {
+  --header-color: #111827;
   --primary-color: #137fec;
   --text-color: #4b5563;
   --border-color: #e5e7eb;
