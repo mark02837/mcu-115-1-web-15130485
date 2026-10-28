@@ -21,8 +21,8 @@ header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-    
-       button {
+
+      button {
         background-color: transparent;
         padding: 0.5rem;
         border: none;
@@ -32,7 +32,7 @@ header {
         align-items: center;
         justify-content: center;
       }
-      
+
       .header-brand {
         display: flex;
         align-items: center;
@@ -43,7 +43,7 @@ header {
           font-size: 1.25rem;
           font-weight: 700;
           line-height: 1.75rem;
-          color:var(--primary-color);
+          color: var(--primary-color);
         }
 
         nav {
@@ -51,7 +51,7 @@ header {
           gap: 1.5rem;
 
           a {
-            color:  var(--text-color);
+            color: var(--text-color);
             text-decoration: none;
 
             &:hover {
@@ -66,15 +66,16 @@ header {
         align-items: center;
         gap: 0.5rem;
 
-        .search {
+        div.search {
           display: flex;
+          align-items: stretch;
           gap: 0;
 
           input {
             border-top-left-radius: 1rem;
             border-bottom-left-radius: 1rem;
             width: 200px;
-            padding:1rem 0.5rem 1rem 1rem;
+            padding: 1rem 0.5rem 1rem 1rem;
             border: none;
             background-color: var(--gray-color-100);
             outline: none;
@@ -85,8 +86,13 @@ header {
             border-bottom-right-radius: 1rem;
             padding: 0.5rem 1rem;
             border: none;
-            background-color:var(--gray-color-100);
+            background-color: var(--gray-color-100);
             cursor: pointer;
+          }
+          .search input:focus-visible,
+          button:focus-visible {
+            outline: 2px solid var(--primary-color);
+            outline-offset: 3px;
           }
         }
 

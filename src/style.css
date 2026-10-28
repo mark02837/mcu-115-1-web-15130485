@@ -91,11 +91,12 @@ header .container .header-inner .header-actions {
   align-items: center;
   gap: 0.5rem;
 }
-header .container .header-inner .header-actions .search {
+header .container .header-inner .header-actions div.search {
   display: flex;
+  align-items: stretch;
   gap: 0;
 }
-header .container .header-inner .header-actions .search input {
+header .container .header-inner .header-actions div.search input {
   border-top-left-radius: 1rem;
   border-bottom-left-radius: 1rem;
   width: 200px;
@@ -104,13 +105,18 @@ header .container .header-inner .header-actions .search input {
   background-color: var(--gray-color-100);
   outline: none;
 }
-header .container .header-inner .header-actions .search button {
+header .container .header-inner .header-actions div.search button {
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
   padding: 0.5rem 1rem;
   border: none;
   background-color: var(--gray-color-100);
   cursor: pointer;
+}
+header .container .header-inner .header-actions div.search .search input:focus-visible,
+header .container .header-inner .header-actions div.search button:focus-visible {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 3px;
 }
 header .container .header-inner .header-actions > button {
   padding: 0.4rem 0.8rem;
