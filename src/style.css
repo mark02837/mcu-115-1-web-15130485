@@ -99,6 +99,23 @@ header .container .header-inner .header-actions > button {
   cursor: pointer;
 }
 
+footer {
+  border-top: 1px solid var(--border-color);
+}
+footer .container {
+  width: 100%;
+  max-width: 90vw;
+  box-sizing: border-box;
+  margin: 0px auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+footer p {
+  color: var(--text-color);
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 :root {
   --primary-color: #137fec;
   --text-color: #4b5563;
