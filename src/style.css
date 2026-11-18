@@ -184,6 +184,41 @@ h1 {
   background-color: var(--primary-color);
   color: white;
 }
+.tag .books {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(256px, 1fr));
+  gap: 2.5rem 1.5rem;
+}
+.tag .books > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.tag .books > div img {
+  display: block;
+  width: 100%;
+  border-radius: 0.5rem;
+  aspect-ratio: 3/4;
+  -o-object-fit: contain;
+     object-fit: contain;
+  background: var(--gray-color-100);
+}
+.tag .books > div h4 {
+  margin: 0.5rem 0 0;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+}
+.tag .books > div span:first-of-type {
+  color: var(--gray-color-500);
+}
+.tag .books > div span:last-of-type {
+  color: var(--primary-color);
+  font-weight: 700;
+  margin-top: auto;
+}
 
 .category-nav {
   margin-block: 1.5rem;
@@ -254,6 +289,7 @@ footer p {
   --text-color: #4b5563;
   --border-color: #e5e7eb;
   --gray-color-100: #f3f4f6;
+  --gray-color-500: #6b7280;
 }
 
 html,
