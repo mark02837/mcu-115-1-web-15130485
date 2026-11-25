@@ -62,6 +62,26 @@ section div.container > div {
   justify-content: space-between;
   align-items: center;
 }
+section main.wrapper {
+  max-width: 90vw;
+  margin: 0 auto;
+  padding-left: var(--container-padding-left);
+  padding-right: var(--container-padding-right);
+}
+section main.wrapper > div {
+  outline: solid 1px red;
+}
+section main.wrapper > div.home {
+  height: 100vh;
+}
+section main.wrapper > div.page {
+  min-height: 700px;
+}
+
+footer {
+  border-top: 1px solid var(--border-color);
+  height: 250px;
+}
 
 html,
 body {
