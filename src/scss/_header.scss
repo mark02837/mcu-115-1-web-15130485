@@ -1,3 +1,5 @@
+@use "./common";
+
 header {
   border-bottom: solid 1px var(--border-color);
   background-color: var(--background-color);
@@ -32,9 +34,7 @@ header {
 
       button {
         background-color: transparent;
-        padding: 0.5rem;
-        border: none;
-        cursor: pointer;
+        @include common.buttonStyle;
         color: var(--text-color);
         display: inline-flex;
         align-items: center;
@@ -50,9 +50,7 @@ header {
 
         .site-title {
           margin: 0;
-          font-size: 1.25rem;
-          font-weight: 700;
-          line-height: 1.75rem;
+          @include common.fontStyle(1.25rem, 700, 1.75rem);
           color: var(--primary-color);
         }
 
@@ -98,10 +96,9 @@ header {
           button {
             border-top-right-radius: 1rem;
             border-bottom-right-radius: 1rem;
-            padding: 0.5rem 1rem;
-            border: none;
+            @include common.buttonStyle;
             background-color: var(--gray-color-100);
-            cursor: pointer;
+            
           }
           .search input:focus-visible,
           button:focus-visible {

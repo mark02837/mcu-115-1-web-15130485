@@ -145,10 +145,10 @@ header .container .header-inner .header-actions div.search input {
 header .container .header-inner .header-actions div.search button {
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem;
   border: none;
-  background-color: var(--gray-color-100);
   cursor: pointer;
+  background-color: var(--gray-color-100);
 }
 header .container .header-inner .header-actions div.search .search input:focus-visible,
 header .container .header-inner .header-actions div.search button:focus-visible {
@@ -179,8 +179,8 @@ header .container .header-inner .header-actions > button {
 }
 .category-sidebar h2 {
   margin: 0;
-  font-weight: 500;
   font-size: 1.125rem;
+  font-weight: 500;
   line-height: 1.75rem;
   color: var(--header-color);
 }
@@ -193,8 +193,8 @@ header .container .header-inner .header-actions > button {
 
 h1 {
   margin: 0 0 1.5rem;
-  font-weight: 600;
   font-size: 1.875rem;
+  font-weight: 600;
   line-height: 2.25rem;
   color: var(--header-color);
 }
@@ -350,6 +350,7 @@ footer .footer-nav a:hover {
 footer p {
   color: var(--text-color);
   font-size: 0.875rem;
+  font-weight: 400;
   line-height: 1.25rem;
 }
 
