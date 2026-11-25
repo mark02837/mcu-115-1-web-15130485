@@ -77,6 +77,9 @@ section main.wrapper {
 section main.wrapper > div {
   outline: solid 1px red;
 }
+section main.wrapper > div[id] {
+  scroll-margin-top: var(--book-header-offset);
+}
 section main.wrapper > div.home {
   height: 100vh;
 }
@@ -103,9 +106,16 @@ body {
 }
 
 html {
+  --book-header-offset: 5rem;
   scroll-behavior: smooth;
 }
 
 body {
   background-color: var(--background-color);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }/*# sourceMappingURL=book.css.map */
