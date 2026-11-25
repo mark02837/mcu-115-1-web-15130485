@@ -251,10 +251,17 @@ h1 {
   font-weight: 600;
   line-height: 1.5rem;
 }
-.tag .books > div span:first-of-type {
+.tag .books > div h4 a:hover {
+  color: var(--primary-color);
+}
+.tag .books > div h4 a:focus-visible {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 3px;
+}
+.tag .books span:first-of-type {
   color: var(--gray-color-500);
 }
-.tag .books > div span:last-of-type {
+.tag .books span:last-of-type {
   color: var(--primary-color);
   font-weight: 700;
   margin-top: auto;
